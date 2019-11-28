@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>ECommerce Checkout</h1>
+  <h2>
+    <ul class="grid">
+      <li>Product</li>
+      <li>Quantity</li>
+      <li>Unit Price</li>
+      <li>Extended Price</li>
+    </ul>
+  </h2>
+  <div>
+    <ul class="grid">
+      <li class="grids">Pants</li>
+      <li>
+        <input type="button" value="-" id="btnpantsminus">
+        <label id="pantsquantity">0</label>
+        <input type="button" value="+" id="btnpantsadd">
+      </li>
+      <li>$40.99</li>
+      <li><label>$</label><label  id="pantsprice">0</label></li>
+    </ul>
+  </div>
+  <div>
+    <ul class="grid">
+      <li>Shirt</li>
+      <li>
+        <input type="button" value="-" id="btnshirtminus">
+        <label id="shirtquantity">0</label>
+        <input type="button" value="+" id="btnshirtadd">
+      </li>
+      <li>$10.99</li>
+      <li><label>$</label><label id="shirtprice">0</label></li>
+    </ul>
+  </div>
+  <input type="button" value="Calculate" id=calculate>
+
+<br>
+<br>
+
+<div>
+  <label>Subtotal: $</label>
+  <label id="subtotal">0</label><br>
+  <label>Tax: $</label>
+  <label id="tax">0</label><br>
+  <label>Total: $</label>
+  <label id="total">0</label>
+</div>
+
+<br>
+<br>
+
+<label>Have a promo code?</label>
+<input type="button" value="CLick to Enter" id="promobtn">
+<div id="promo">
+  <label>Please input your code.</label>
+  <input type="text" id="code">
+  <input type="button" id="submitbtn" value="submit">
+</div>
+<div id="final"></div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+*{
+  list-style-type: none;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#promo{
+  display: none;
+}
